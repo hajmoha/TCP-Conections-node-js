@@ -1,11 +1,4 @@
-/*
-This code demonstrates Node.js's asynchronous, non-blocking model:
-1. The server handles requests and writes numbers (1 to 100) synchronously to the response.
-2. A setTimeout delays file reading for 2 seconds to simulate async behavior.
-3. The file is read asynchronously using fs.readFile, and its content (or an error message) is appended to the response.
-4. The event loop ensures numbers are written first, and the file operation starts only after the synchronous part finishes and the 2-second timer expires.
-This highlights how Node.js handles async operations without blocking the main thread.
-*/
+
 
 const http = require('http')
 const fs = require('fs');
